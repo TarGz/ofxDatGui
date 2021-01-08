@@ -416,6 +416,17 @@ ofxDatGuiFolder* ofxDatGui::addFolder(ofxDatGuiFolder* folder)
     return folder;
 }
 
+// TARGZ EDIT
+void ofxDatGui::removeItem(ofxDatGuiComponent* itemToRemove) {
+    for (int i = 0; i < items.size(); i++) {
+        if (items[i] == itemToRemove) {
+            items.erase(items.begin() + i);
+            break;
+        }
+    }
+    layoutGui();
+}
+
 void ofxDatGui::attachItem(ofxDatGuiComponent* item)
 {
     if (mGuiFooter != nullptr){

@@ -82,6 +82,10 @@ class ofxDatGui : public ofxDatGuiInteractiveObject
         ofxDatGuiFolder* addFolder(string label, ofColor color = ofColor::white);
         ofxDatGuiFolder* addFolder(ofxDatGuiFolder* folder);
     
+        // TARGZ EDIT
+        void removeItem(ofxDatGuiComponent* item);
+    
+    
         ofxDatGuiHeader* getHeader();
         ofxDatGuiFooter* getFooter();
         ofxDatGuiLabel* getLabel(string label, string folder = "");
