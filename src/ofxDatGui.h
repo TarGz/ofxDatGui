@@ -114,7 +114,7 @@ class ofxDatGui : public ofxDatGuiInteractiveObject
         bool mEnabled;
         bool mExpanded;
         bool mAutoDraw;
-        bool mMouseDown;
+        bool mMouseDown=false;
         bool mAlphaChanged;
         bool mWidthChanged;
         bool mThemeChanged;
