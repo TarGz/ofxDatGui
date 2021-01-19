@@ -218,7 +218,7 @@ class ofxDatGuiTheme{
         static string AssetPath;
     
         struct {
-            int size = 6;
+            int size = 7;
             string file = AssetPath + "ofxbraitsch/fonts/Verdana.ttf";
             shared_ptr<ofxSmartFont> ptr;
         } font;
