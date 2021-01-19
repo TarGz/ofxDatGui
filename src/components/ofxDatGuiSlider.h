@@ -59,7 +59,7 @@ class ofxDatGuiSlider : public ofxDatGuiComponent {
         {
             delete mInput;
         }
-    
+            
         void setTheme(const ofxDatGuiTheme* theme)
         {
             setComponentStyle(theme);
@@ -70,7 +70,11 @@ class ofxDatGuiSlider : public ofxDatGuiComponent {
             mInput->setTextInactiveColor(theme->color.slider.text);
             setWidth(theme->layout.width, theme->layout.labelWidth);
         }
-    
+        void setSliderFill(ofColor color){
+            mSliderFill = color;
+            mInput->setTextActiveColor( color );
+            mInput->setTextInactiveColor(color);
+        }
         void setWidth(int width, float labelWidth)
         {
             ofxDatGuiComponent::setWidth(width, labelWidth);
